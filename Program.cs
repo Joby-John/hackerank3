@@ -34,7 +34,8 @@ class Result
         {
             hr = 12 + hr;
             return (hr.ToString("D2") + ":" + mm.ToString("D2") + ":" + ss.ToString("D2"));
-
+            // the D2 makes the 1 digit number as a 2 digit nummber eg; 1 as 01
+            //eg code: ("{0:D2}:{1:D2}:{2:D2}",hour, minute, second)
         }
         else if (ampm == "AM" && hr == 12)
         {
